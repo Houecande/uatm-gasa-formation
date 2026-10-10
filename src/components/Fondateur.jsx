@@ -1,4 +1,4 @@
-import photo from '../assets/fondateur.jpg'
+import photo from '../assets/fondateur.webp'
 import { fondateur } from '../data'
 
 export default function Fondateur() {
