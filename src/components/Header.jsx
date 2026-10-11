@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import logo from '../assets/logo.png'
 import { contact, SITE_OFFICIEL } from '../data'
+import { PhoneIcon, MailIcon } from './Icons'
 
 const liens = [
   ['Accueil', '#accueil'],
@@ -17,8 +18,12 @@ export default function Header() {
     <>
       <div className="topbar">
         <div className="container">
-          <span>📞 {contact.telephone}</span>
-          <span>✉️ {contact.email}</span>
+          <span style={{ display: 'inline-flex', alignItems: 'center', gap: '6px' }}>
+            <PhoneIcon /> {contact.telephone}
+          </span>
+          <span style={{ display: 'inline-flex', alignItems: 'center', gap: '6px' }}>
+            <MailIcon /> {contact.email}
+          </span>
         </div>
       </div>
       <header className="header">
