@@ -8,7 +8,6 @@ export const contact = {
   telephoneLien: 'tel:+2290165787721',
   email: 'info@uatm-gasa.com',
   horaires: 'Lundi - Vendredi : 8h00 - 17h00',
-  fermeture: 'Fermé le samedi et dimanche',
 }
 
 export const stats = [
@@ -108,8 +107,8 @@ export const campus = [
     principal: true,
     adresse: '2ème rue à gauche après le CEG Gbégamey',
     telephone: '+229 65 78 77 21',
-    lat: 6.361814, 
-    lng: 2.413788,
+    lat: 6.360185996124605, 
+    lng: 2.413464441136492,
     recherche: 'UATM GASA Formation Gbégamey, Cotonou, Bénin',
   },
   {

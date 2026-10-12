@@ -25,7 +25,6 @@ export default function Footer() {
             <h4>Horaires</h4>
             <ul>
               <li>{contact.horaires}</li>
-              <li>{contact.fermeture}</li>
               <li style={{ marginTop: 10 }}>
                 <a href={SITE_OFFICIEL} target="_blank" rel="noreferrer">uatm-gasa.com ↗</a>
               </li>
