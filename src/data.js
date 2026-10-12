@@ -1,4 +1,7 @@
 export const SITE_OFFICIEL = 'https://uatm-gasa.com'
+export const URL_FILIERES = `${SITE_OFFICIEL}/filieres`
+export const URL_ADMISSION = `${SITE_OFFICIEL}/admission`
+export const URL_CONTACT = `${SITE_OFFICIEL}/contact`
 
 export const ANNEE_CREATION = 1992
 

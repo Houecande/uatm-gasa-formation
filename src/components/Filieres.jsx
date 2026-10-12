@@ -1,4 +1,4 @@
-import { poles, SITE_OFFICIEL } from '../data'
+import { poles, URL_FILIERES } from '../data'
 
 export default function Filieres() {
   return (
@@ -22,7 +22,7 @@ export default function Filieres() {
           ))}
         </div>
         <div className="cta-row">
-          <a className="btn btn-blue" href={SITE_OFFICIEL} target="_blank" rel="noreferrer">
+          <a className="btn btn-blue" href={URL_FILIERES} target="_self">
             Voir toutes les filières sur le site officiel
           </a>
         </div>

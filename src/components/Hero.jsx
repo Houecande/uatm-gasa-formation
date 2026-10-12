@@ -1,5 +1,5 @@
 import etudiants from '../assets/etudiants.jpg'
-import { SITE_OFFICIEL } from '../data'
+import { URL_ADMISSION } from '../data'
 import { GraduationCapIcon } from './Icons'
 
 export default function Hero() {
@@ -18,10 +18,10 @@ export default function Hero() {
             entrepreneurs, comptables, agronomes et juristes.
           </p>
           <div className="actions">
-            <a className="btn btn-accent" href={SITE_OFFICIEL} target="_blank" rel="noreferrer">
+            <a className="btn btn-accent" href={URL_ADMISSION} target="_self">
               S'inscrire maintenant
             </a>
-            <a className="btn btn-outline" href="#filieres">Découvrir les filières</a>
+            <a className="btn btn-outline" href="#filieres" target="_self">Découvrir les filières</a>
           </div>
         </div>
         <div className="hero-photo">

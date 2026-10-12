@@ -1,5 +1,6 @@
 import logo from '../assets/logo.png'
 import { contact, SITE_OFFICIEL } from '../data'
+import { ExternalLinkIcon, MailIcon, MapPinIcon, PhoneIcon } from './Icons'
 
 export default function Footer() {
   return (
@@ -16,9 +17,9 @@ export default function Footer() {
           <div>
             <h4>Contact</h4>
             <ul>
-              <li>📍 {contact.adresse}</li>
-              <li>📞 <a href={contact.telephoneLien}>{contact.telephone}</a></li>
-              <li>✉️ <a href={`mailto:${contact.email}`}>{contact.email}</a></li>
+              <li><MapPinIcon aria-hidden="true" /> {contact.adresse}</li>
+              <li><PhoneIcon aria-hidden="true" /> <a href={contact.telephoneLien} target="_self">{contact.telephone}</a></li>
+              <li><MailIcon aria-hidden="true" /> <a href={`mailto:${contact.email}`} target="_self">{contact.email}</a></li>
             </ul>
           </div>
           <div>
@@ -26,7 +27,9 @@ export default function Footer() {
             <ul>
               <li>{contact.horaires}</li>
               <li style={{ marginTop: 10 }}>
-                <a href={SITE_OFFICIEL} target="_blank" rel="noreferrer">uatm-gasa.com ↗</a>
+                <a href={SITE_OFFICIEL} target="_self">
+                  uatm-gasa.com <ExternalLinkIcon aria-hidden="true" />
+                </a>
               </li>
             </ul>
           </div>

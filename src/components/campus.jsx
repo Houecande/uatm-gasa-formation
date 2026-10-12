@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import batiment from '../assets/batiment.webp'
 import { campus } from '../data'
+import { MapPinIcon, PhoneIcon } from './Icons'
 
 export default function Campus() {
   const [actif, setActif] = useState(0)
@@ -27,11 +28,11 @@ export default function Campus() {
                 onClick={() => setActif(i)}
               >
                 <h3>
-                  📍 Site de {site.nom}
+                  <MapPinIcon aria-hidden="true" /> Site de {site.nom}
                   {site.principal && <span className="principal">Campus principal</span>}
                 </h3>
                 <p>{site.ville}, {site.adresse}</p>
-                <p className="tel">📞 {site.telephone}</p>
+                <p className="tel"><PhoneIcon aria-hidden="true" /> {site.telephone}</p>
               </button>
             ))}
           </div>
@@ -48,8 +49,7 @@ export default function Campus() {
             <a
               className="map-link"
               href={`https://www.google.com/maps/search/?api=1&query=${q}`}
-              target="_blank"
-              rel="noreferrer"
+              target="_self"
             >
               Ouvrir / obtenir l'itinéraire dans Google Maps →
             </a>

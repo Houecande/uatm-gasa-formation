@@ -1,16 +1,78 @@
-# React + Vite
+# UATM-GASA Formation
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Site de présentation de l'Université Africaine de Technologie et de Management (UATM-GASA), réalisé avec React et Vite.
 
-Currently, two official plugins are available:
+## Fonctionnalités
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Présentation de l'université et de son fondateur.
+- Présentation des filières, des grandes étapes de l'établissement et des campus.
+- Carte interactive pour localiser les campus.
+- Liens directs vers les pages officielles des filières, des admissions et du contact.
+- Statistiques animées, avec respect des préférences de réduction des animations du navigateur.
+- Mise en page adaptée aux appareils mobiles.
 
-## React Compiler
+## Prérequis
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Node.js compatible avec Vite 8.
+- npm.
 
-## Expanding the Oxlint configuration
+## Installation
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+À la racine du projet, installer les dépendances :
+
+```bash
+npm install
+```
+
+## Développement
+
+Lancer le serveur local :
+
+```bash
+npm run dev
+```
+
+Vite affiche l'adresse locale à ouvrir dans le navigateur et recharge automatiquement la page lors des modifications.
+
+## Vérification et production
+
+Construire le site optimisé :
+
+```bash
+npm run build
+```
+
+Prévisualiser localement la version produite :
+
+```bash
+npm run preview
+```
+
+Exécuter Oxlint :
+
+```bash
+npm run lint
+```
+
+## Organisation du projet
+
+```text
+src/
+  assets/       Images et logo
+  components/   Sections et composants React
+  data.js       Contenus, coordonnées, liens et statistiques
+  index.css     Styles globaux et responsive
+  App.jsx       Assemblage des sections du site
+  main.jsx      Point d'entrée React
+public/         Ressources statiques
+index.html      Document HTML et icône du site
+```
+
+Les contenus principaux (coordonnées, liens, filières, campus et statistiques) sont centralisés dans `src/data.js`. Le logo de l'université est également utilisé comme icône de l'onglet du navigateur.
+
+## Liens officiels
+
+- Site : [uatm-gasa.com](https://uatm-gasa.com)
+- Filières : [uatm-gasa.com/filieres](https://uatm-gasa.com/filieres)
+- Admissions : [uatm-gasa.com/admission](https://uatm-gasa.com/admission)
+- Contact : [uatm-gasa.com/contact](https://uatm-gasa.com/contact)
